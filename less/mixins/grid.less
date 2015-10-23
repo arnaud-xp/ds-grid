@@ -1,0 +1,47 @@
+/**
+ * Grid generation mixins.
+ * @author Arnaud P <arnaud@xpressive.io>
+ * @version 1.0.0
+ */
+
+/**
+ * This should contains grid columns
+ */
+.as-row(@gutter: @gutter-width)
+{
+    margin-left: @gutter / 2;
+    margin-right: @gutter / 2;
+
+    &:extend(.clearfix all);
+}
+
+/**
+ * This mixin generates columns classes and is triggered within .column class declaration
+ */
+.do-columns(@needed-columns, @size: xs, @index: 1) when (@index <= @needed-columns)
+{
+    &.@{size}-@{index} {
+        width: (@index * 100% / @needed-columns);
+
+        .is-float(@index) when (@index < @needed-columns)
+        {
+            float: left;
+        }
+
+        .is-float(@index);
+    }
+
+    .do-columns(@needed-columns, @size, (@index + 1));
+}
+
+/**
+ * This mixin generates columns offsets classes and is triggered within .column class declaration
+ */
+.do-columns-offsets(@needed-columns, @size: xs, @index: 1) when (@index <= @needed-columns)
+{
+    &.@{size}-offset-@{index} {
+        margin-left: (@index * 100% / @needed-columns);
+    }
+
+    .do-columns-offsets(@needed-columns, @size, (@index + 1));
+}

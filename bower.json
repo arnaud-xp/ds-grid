@@ -1,0 +1,26 @@
+{
+  "name": "ds-grid",
+  "version": "1.0.0",
+  "authors": [
+    "arnaud-xp <arnaud@xpressive.io>"
+  ],
+  "description": "Ultra Light CSS grid framework",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "css",
+    "less",
+    "grid",
+    "framework"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/arnaud-xp/ds-grid",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

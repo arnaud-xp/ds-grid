@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>DS Grid Demo</title>
+
+        <link href="/css/ds-grid.css" rel="stylesheet" type="text/css">
+
+        <style type="text/css">
+            * {
+                box-sizing: border-box;
+            }
+
+            /**
+             * Small reset
+             */
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                font-size: 14px;
+                font-family: monospace;
+            }
+
+            .column p {
+                background-color: #eee;
+                margin: 0;
+            }
+
+            .visible {
+                color: #3D8B40;
+                background-color: #b5dfb7 !important;
+            }
+            .unvisible {
+                color: #aaa;
+                background-color: #eee !important;
+            }
+        </style>
+        
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+        <h1 style="text-align: center">DS Grid demonstration page</h1>
+        
+        <article class="container" id="about-containers">
+
+            <h2>About Containers</h2>
+
+            <p>This is a <b>.container</b>. Its purpose is to handle your HTML code and resize automatically with the viewport.</p>
+
+            <p>If you want your container to use full parent width just add <b>.fluid</b> class to it.</p>
+        </article>
+        
+        <article class="container" id="about-the-grid">
+
+            <h2>The grid</h2>
+
+            <h3>Basics</h3>
+
+            <p>DS Grids are responsive and mobile first by using "min-width" media queries.</p>
+
+            <p>By default, DS Grid handles 4 breakpoints :</p>
+
+            <ul>
+                <li>Xtra small viewports (<b>xs</b>): &lt; 768px</li>
+                <li>Small viewports (<b>sm</b>): &gt;= 768px</li>
+                <li>Medium viewports (<b>md</b>): &gt;= 992px</li>
+                <li>Large viewports (<b>lg</b>): &gt;= 1200px</li>
+            </ul>
+
+            <h3>Rows &amp; cols</h3>
+
+            <p>A grid is made of 2 base elements : <b>.row</b>s containing <b>.col</b>s.</p>
+
+            <p>Following examples are made with a 12 columns grid. You can customize column number with LESS files.</p>
+
+            <p>Rows are made to hold columns and one should not be used without other.</p>
+
+            <div class="row">
+
+                <div class="column xs-12 sm-6 md-4 lg-3">
+                    <p style="text-align: center">
+                        .col<br>
+                        .xs-12<br>
+                        .sm-6<br>
+                        .md-4<br>
+                        .lg-3
+                    </p>
+                </div>
+
+                <div class="column xs-12 sm-6 md-4 lg-3">
+                    <p style="text-align: center">
+                        .col<br>
+                        .xs-12<br>
+                        .sm-6<br>
+                        .md-4<br>
+                        .lg-3
+                    </p>
+                </div>
+
+                <div class="column xs-12 sm-6 md-4 lg-3">
+                    <p style="text-align: center">
+                        .col<br>
+                        .xs-12<br>
+                        .sm-6<br>
+                        .md-4<br>
+                        .lg-3
+                    </p>
+                </div>
+
+                <div class="column xs-12 sm-6 md-4 lg-3">
+                    <p style="text-align: center">
+                        .col<br>
+                        .xs-12<br>
+                        .sm-6<br>
+                        .md-4<br>
+                        .lg-3
+                    </p>
+                </div>
+
+                <div class="column xs-12 sm-6 md-4 lg-3">
+                    <p style="text-align: center">
+                        .col<br>
+                        .xs-12<br>
+                        .sm-6<br>
+                        .md-4<br>
+                        .lg-3
+                    </p>
+                </div>
+
+                <div class="column xs-12 sm-6 md-4 lg-3">
+                    <p style="text-align: center">
+                        .col<br>
+                        .xs-12<br>
+                        .sm-6<br>
+                        .md-4<br>
+                        .lg-3
+                    </p>
+                </div>
+
+                <div class="column xs-12 sm-6 md-4 lg-3">
+                    <p style="text-align: center">
+                        .col<br>
+                        .xs-12<br>
+                        .sm-6<br>
+                        .md-4<br>
+                        .lg-3
+                    </p>
+                </div>
+
+                <div class="column xs-12 sm-6 md-4 lg-3">
+                    <p style="text-align: center">
+                        .col<br>
+                        .xs-12<br>
+                        .sm-6<br>
+                        .md-4<br>
+                        .lg-3
+                    </p>
+                </div>
+
+                <div class="column xs-12 sm-6 md-4 lg-3">
+                    <p style="text-align: center">
+                        .col<br>
+                        .xs-12<br>
+                        .sm-6<br>
+                        .md-4<br>
+                        .lg-3
+                    </p>
+                </div>
+
+                <div class="column xs-12 sm-6 md-4 lg-3">
+                    <p style="text-align: center">
+                        .col<br>
+                        .xs-12<br>
+                        .sm-6<br>
+                        .md-4<br>
+                        .lg-3
+                    </p>
+                </div>
+
+                <div class="column xs-12 sm-6 md-4 lg-3">
+                    <p style="text-align: center">
+                        .col<br>
+                        .xs-12<br>
+                        .sm-6<br>
+                        .md-4<br>
+                        .lg-3
+                    </p>
+                </div>
+
+                <div class="column xs-12 sm-6 md-4 lg-3">
+                    <p style="text-align: center">
+                        .col<br>
+                        .xs-12<br>
+                        .sm-6<br>
+                        .md-4<br>
+                        .lg-3
+                    </p>
+                </div>
+            </div>
+
+            <h3>Using offsets</h3>
+
+            <p>It is possible to offset columns so you can space small columns in rows</p>
+
+            <div class="row">
+
+                <div class="column xs-12 lg-4">
+                    <p style="text-align: center">
+                        .col<br>
+                        .xs-12<br>
+                        .lg-4
+                    </p>
+                </div>
+
+                <div class="column xs-12 lg-4 lg-offset-4">
+                    <p style="text-align: center">
+                        .col<br>
+                        .xs-12<br>
+                        .lg-4<br>
+                        .lg-offset-4
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <footer>
+            <p style="text-align:center">&copy; 2015 Arnaud PONEL - MIT Licence</p>
+        </footer>
+    </body>
+</html>

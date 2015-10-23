@@ -1,0 +1,41 @@
+/**
+ * This LESS files contains classes used to build responsive grids.
+ * @author Arnaud P <arnaud@xpressive.io>
+ * @version 1.0.0
+ */
+
+/**
+ * Rows are made to contain grid columns
+ */
+.row {
+    
+    .as-row();
+
+    .column {
+
+        position: relative;
+        min-height: 1px;
+        padding-left:  @gutter-width / 2;
+        padding-right: @gutter-width / 2;
+        margin-top: @gutter-width / 2;
+        margin-bottom: @gutter-width / 2;
+
+        .do-columns(@columns);
+        .do-columns-offsets(@columns);
+
+        @media (min-width: @screen-sm) {
+            .do-columns(@columns, @size: sm);
+            .do-columns-offsets(@columns, @size: sm);
+        }
+
+        @media (min-width: @screen-md) {
+            .do-columns(@columns, @size: md);
+            .do-columns-offsets(@columns, @size: md);
+        }
+
+        @media (min-width: @screen-lg) {
+            .do-columns(@columns, @size: lg);
+            .do-columns-offsets(@columns, @size: lg);
+        }
+    }
+}
